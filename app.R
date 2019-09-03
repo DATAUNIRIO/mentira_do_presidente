@@ -21,18 +21,9 @@
 #library(shinyWidgets, lib.loc="/home/steven/R/x86_64-pc-linux-gnu-library/3.4")
 
 library(shiny)
-library(shinyjs)
-library(magrittr)
-library(shinyWidgets)
 
-ui <- fluidPage(theme = "estilo.css",
-                tags$head(tags$style(HTML('
-                #header{
-                font-size: 200%;
-                }'))),
-                #setBackgroundColor("#a7e5c2"),
-                setBackgroundImage(src = "https://media.metrolatam.com/2019/05/06/bolsonaro-b5432043d4bc00085d6344d1d4f9f3cc-1200x600.jpg"),
-                #setBackgroundImage(src = 'www/bolsonaro.jpg'),
+
+ui <- fluidPage(
                 titlePanel(h2(br(),paste("Novo gerador de embromação presidencial Tabajara"),style = "background-color: coral;")),
                   mainPanel(
                     tabsetPanel(
